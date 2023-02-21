@@ -17,7 +17,7 @@ jobs:
         with:
           version: latest
       - name: login to docker hub
-        run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u masnasrinu --password-stdin
+        run: echo "${{ secrets.GH_PAT }}" | docker login ghcr.io -u masnasrinu --password-stdin
       - name: build the image
         run: |
           docker buildx build --push \
