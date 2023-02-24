@@ -1,0 +1,26 @@
+name: pull image
+
+on:
+  workflow_dispatch:
+  push:
+    branches: master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v2
+      - name: install buildx
+        id: buildx
+        uses: crazy-max/ghaction-docker-buildx@v1
+        with:
+          version: latest
+      - name: login to docker hub
+        run: echo "${{ secrets.GH_PAT }}" | docker login ghcr.io -u masnasrinu --password-stdin
+      - name: pull the image 1
+        run: |
+          docker pull ghcr.io/masnasrinu/multiarch-example:latest
+      - name: pull the image 1
+        run: |
+          docker pull ghcr.io/masnasrinu/multiarch-example:latest
