@@ -18,12 +18,10 @@ jobs:
           version: latest
       - name: login to docker hub
         run: echo "${{ secrets.GH_PAT }}" | docker login ghcr.io -u masnasrinu --password-stdin
-      - name: pull the image 1
+      - name: pull the image
         run: |
           docker pull ghcr.io/masnasrinu/multiarch-example:latest
-      - name: pull the image 1
-        run: |
-          docker pull ghcr.io/masnasrinu/multiarch-example:latest
+
   pull2:
     runs-on: ubuntu-latest
     steps:
@@ -36,9 +34,126 @@ jobs:
           version: latest
       - name: login to docker hub
         run: echo "${{ secrets.GH_PAT }}" | docker login ghcr.io -u masnasrinu --password-stdin
-      - name: pull the image 1
+      - name: pull the image
         run: |
           docker pull ghcr.io/masnasrinu/multiarch-example:latest
-      - name: pull the image 1
+  pull3:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v2
+      - name: install buildx
+        id: buildx
+        uses: crazy-max/ghaction-docker-buildx@v1
+        with:
+          version: latest
+      - name: login to docker hub
+        run: echo "${{ secrets.GH_PAT }}" | docker login ghcr.io -u masnasrinu --password-stdin
+      - name: pull the image
+        run: |
+          docker pull ghcr.io/masnasrinu/multiarch-example:latest
+  pull4:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v2
+      - name: install buildx
+        id: buildx
+        uses: crazy-max/ghaction-docker-buildx@v1
+        with:
+          version: latest
+      - name: login to docker hub
+        run: echo "${{ secrets.GH_PAT }}" | docker login ghcr.io -u masnasrinu --password-stdin
+      - name: pull the image
+        run: |
+          docker pull ghcr.io/masnasrinu/multiarch-example:latest
+  pull5:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v2
+      - name: install buildx
+        id: buildx
+        uses: crazy-max/ghaction-docker-buildx@v1
+        with:
+          version: latest
+      - name: login to docker hub
+        run: echo "${{ secrets.GH_PAT }}" | docker login ghcr.io -u masnasrinu --password-stdin
+      - name: pull the image
+        run: |
+          docker pull ghcr.io/masnasrinu/multiarch-example:latest
+  pull6:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v2
+      - name: install buildx
+        id: buildx
+        uses: crazy-max/ghaction-docker-buildx@v1
+        with:
+          version: latest
+      - name: login to docker hub
+        run: echo "${{ secrets.GH_PAT }}" | docker login ghcr.io -u masnasrinu --password-stdin
+      - name: pull the image
+        run: |
+          docker pull ghcr.io/masnasrinu/multiarch-example:latest
+  pull7:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v2
+      - name: install buildx
+        id: buildx
+        uses: crazy-max/ghaction-docker-buildx@v1
+        with:
+          version: latest
+      - name: login to docker hub
+        run: echo "${{ secrets.GH_PAT }}" | docker login ghcr.io -u masnasrinu --password-stdin
+      - name: pull the image
+        run: |
+          docker pull ghcr.io/masnasrinu/multiarch-example:latest
+  pull8:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v2
+      - name: install buildx
+        id: buildx
+        uses: crazy-max/ghaction-docker-buildx@v1
+        with:
+          version: latest
+      - name: login to docker hub
+        run: echo "${{ secrets.GH_PAT }}" | docker login ghcr.io -u masnasrinu --password-stdin
+      - name: pull the image
+        run: |
+          docker pull ghcr.io/masnasrinu/multiarch-example:latest
+  pull9:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v2
+      - name: install buildx
+        id: buildx
+        uses: crazy-max/ghaction-docker-buildx@v1
+        with:
+          version: latest
+      - name: login to docker hub
+        run: echo "${{ secrets.GH_PAT }}" | docker login ghcr.io -u masnasrinu --password-stdin
+      - name: pull the image
+        run: |
+          docker pull ghcr.io/masnasrinu/multiarch-example:latest
+  pull10:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v2
+      - name: install buildx
+        id: buildx
+        uses: crazy-max/ghaction-docker-buildx@v1
+        with:
+          version: latest
+      - name: login to docker hub
+        run: echo "${{ secrets.GH_PAT }}" | docker login ghcr.io -u masnasrinu --password-stdin
+      - name: pull the image
         run: |
           docker pull ghcr.io/masnasrinu/multiarch-example:latest
