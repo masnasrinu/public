@@ -1,0 +1,26 @@
+name: Test Maven Release Plugin via 3.9.0
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  packages: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: |
+          git config user.name "GitHub Actions"
+          git config user.email "git@github.com"
+      - name: Set up Java 17
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+      - name: Publish package to GitHub (Release plugin)
+        run: mvn -V -B -X release:prepare release:perform
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
