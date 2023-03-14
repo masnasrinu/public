@@ -13,4 +13,4 @@ jobs:
         run: |
           curl -H "Authorization: Bearer $GITHUB_TOKEN" https://nuget-lab.pkg.github.com/GitHub/query | jq '.'
         env:
-        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
