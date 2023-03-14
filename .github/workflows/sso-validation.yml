@@ -1,0 +1,16 @@
+name: SSO Validation
+
+on:
+  workflow_dispatch:
+  push:
+    branches: master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: SSO Validation
+        run: |
+          curl -H "Authorization: Bearer $GITHUB_TOKEN" https://nuget-lab.pkg.github.com/GitHub/query | jq '.'
+        env:
+        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
