@@ -1,0 +1,25 @@
+name: RubyGems Pull
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@master
+
+    - name: Set up Ruby 2.6
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: 2.6
+
+    - name: Fetch from GitHub Packages
+      run: |
+        cd ruby/brie/
+        bundle config https://rubygems-lab.pkg.github.com/sweethaven-village $GITHUB_ACTOR:$GITHUB_TOKEN
+        bundle config https://rubygems-lab.pkg.github.com/github $GITHUB_ACTOR:$GITHUB_TOKEN
+        bundle install
+      env:
+        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
