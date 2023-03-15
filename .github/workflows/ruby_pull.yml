@@ -1,7 +1,10 @@
 name: RubyGems Pull
 
 on:
-  workflow_dispatch:
+  push:
+    paths:
+      - 'ruby/brie/*'
+      - '.github/workflows/ruby_pull.yml'
 
 jobs:
   build:
