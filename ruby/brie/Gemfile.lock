@@ -1,0 +1,13 @@
+GEM
+  remote: https://rubygems.pkg.github.com/sweethaven-village/
+  specs:
+    parmesan (1.0.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  parmesan!
+
+BUNDLED WITH
+   1.16.5
