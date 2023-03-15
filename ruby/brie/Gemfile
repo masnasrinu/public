@@ -1,0 +1,9 @@
+source "https://rubygems.org"
+
+source "https://rubygems-lab.pkg.github.com/sweethaven-village" do
+  gem "parmesan"
+end
+
+source "https://rubygems-lab.pkg.github.com/github" do
+  gem "github-linguist", "7.6.1"
+end
