@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-source "https://rubygems.pkg.github.com/sweethaven-village" do
+source "https://rubygems.pkg.github.com/masnasrinu" do
   gem "parmesan"
 end
 
