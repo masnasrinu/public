@@ -1,5 +1,5 @@
 GEM
-  remote: https://rubygems-lab.pkg.github.com/sweethaven-village/
+  remote: https://rubygems.pkg.github.com/sweethaven-village/
   specs:
     parmesan (1.0.0)
 
