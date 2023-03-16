@@ -21,7 +21,7 @@ jobs:
     - name: Fetch from GitHub Packages
       run: |
         cd ruby/brie/
-        bundle config https://rubygems.pkg.github.com/sweethaven-village $GITHUB_ACTOR:$GITHUB_TOKEN
+        bundle config https://rubygems.pkg.github.com/masnasrinu $GITHUB_ACTOR:$GITHUB_TOKEN
         bundle config https://rubygems.pkg.github.com/github $GITHUB_ACTOR:$GITHUB_TOKEN
         bundle install
       env:
