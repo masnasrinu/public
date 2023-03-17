@@ -4,10 +4,10 @@ Gem::Specification.new do |s|
   s.date        = '2019-10-10'
   s.summary     = "Ciao!"
   s.description = "Parmigiano-Reggiano or Parmesan is an Italian hard, granular cheese."
-  s.authors     = ["Dinah Shi"]
-  s.email       = 'dinahshi@github.com'
+  s.authors     = ["Masna Srinivas"]
+  s.email       = 'masnasrinu@github.com'
   s.files       = ["lib/parmesan.rb"]
-  s.homepage    = 'https://github.com/sweethaven-village/actions-integration'
+  s.homepage    = 'https://github.com/masnasrinu/actions-integration'
   s.license     = 'MIT'
-  s.metadata    = { "github_repo" => "ssh://github.com/sweethaven-village/actions-integration" }
+  s.metadata    = { "github_repo" => "ssh://github.com/masnasrinu/actions-integration" }
 end
