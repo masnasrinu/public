@@ -1,4 +1,4 @@
-name: RubyGems Pull
+name: RubyGems pull
 
 on:
   push:
