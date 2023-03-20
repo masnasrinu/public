@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.authors     = ["Masna Srinivas"]
   s.email       = 'masnasrinu@github.com'
   s.files       = ["lib/parmesan.rb"]
-  s.homepage    = 'https://github.com/masnasrinu/actions-integration'
+  s.homepage    = 'https://github.com/masnasrinu/public'
   s.license     = 'MIT'
-  s.metadata    = { "github_repo" => "ssh://github.com/masnasrinu/actions-integration" }
+  s.metadata    = { "github_repo" => "ssh://github.com/masnasrinu/public" }
 end
